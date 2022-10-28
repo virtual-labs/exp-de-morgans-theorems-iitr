@@ -1,0 +1,649 @@
+* {
+    margin: 0px;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/*header section template styling*/
+
+#header {
+    border-bottom: 8px solid #ff6600;
+    font-family: 'Raleway', sans-serif;
+    width: 1518px;
+    top: 0;
+    background-color: #fff!important;
+}
+
+#header img {
+    padding: 8px 8px 4px 32px;
+}
+
+#labName {
+    float: right;
+    font-size: 25px;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 40px;
+    color: #2C99CE;
+}
+
+#exp-name {
+    width: 1500px;
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+    color: #2C99CE;
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 1px solid #333;
+}
+
+#simulation {
+    height: 590px;
+    width: 1518px;
+    display: inline-block;
+}
+
+
+/*left side views*/
+
+.left {
+    padding-top: 20px;
+    margin-left: 20px;
+    float: left;
+    width: 1000px;
+    height: 550px;
+    display: block;
+}
+
+
+/*Screen for experiment*/
+
+#mid {
+    height: 500px;
+    border: 2px solid #d39538;
+    box-shadow: 3px 4px 6px #888888;
+    border-radius: 5px;
+    background-image: url('../images/desk2.jpg');
+}
+
+
+/* Components */
+
+#board {
+    margin: auto;
+    height: 300px;
+    width: 909px;
+    border-radius: 5px;
+    border: 3px solid #d6d3d3;
+    box-shadow: 3px 4px 6px #888888;
+    background-image: url('../images/board.png');
+    display: block;
+    visibility: hidden;
+}
+
+#led {
+    height: 120px;
+    width: 27px;
+    margin-left: 54px;
+    background-image: url('../images/led.png');
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+}
+
+#supply {
+    height: 78px;
+    width: 119px;
+    background-image: url('../images/supply.png');
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px #333;
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+}
+
+#ic7432 {
+    height: 154px;
+    width: 96px;
+    margin: 73.4px 0px 0px 156.6px;
+    background-image: url('../images/ic7432.png');
+    display: inline-block;
+    visibility: hidden;
+}
+
+#ic7404 {
+    height: 154px;
+    width: 96px;
+    margin: 0px 0px 0px 160.6px;
+    background-image: url('../images/ic7404.png');
+    display: inline-block;
+    visibility: hidden;
+}
+
+#ic7408 {
+    height: 154px;
+    width: 96px;
+    margin: 0px 20px 0px 156.4px;
+    background-image: url('../images/ic7408.png');
+    display: inline-block;
+    visibility: hidden;
+}
+
+#inputs {
+    height: 100px;
+    width: 280px;
+    margin-left: 330px;
+    display: inline-block;
+    visibility: hidden;
+}
+
+#input_A {
+    height: 75px;
+    width: 50px;
+    display: inline-block;
+}
+
+#input_B {
+    height: 75px;
+    width: 50px;
+    display: inline-block;
+}
+
+
+/*check connection and reset button*/
+
+.bottom {
+    height: 60px;
+    text-align: center;
+}
+
+.bottom button {
+    margin: 10px 80px 10px 80px;
+    height: 40px;
+    width: 210px;
+    font-size: 15px;
+    border: none;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+#check {
+    border: 2px rgb(0, 168, 8) solid;
+    background: rgb(0, 168, 8);
+}
+
+#check:hover {
+    color: rgb(0, 168, 8);
+    background: white;
+    font-size: 18px;
+}
+
+#reset {
+    border: 2px rgb(255, 54, 54) solid;
+    background: rgb(255, 54, 54);
+}
+
+#reset:hover {
+    color: rgb(255, 54, 54);
+    background: white;
+    font-size: 18px;
+}
+
+
+/*right side views*/
+
+.right {
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right;
+    border-radius: 5px;
+    background: rgb(220, 221, 148);
+    width: 410px;
+    height: 550px;
+    text-align: center;
+    display: block;
+}
+
+
+/*theorem selector radio button*/
+
+.theorem {
+    display: flex;
+    margin: 20px 0 0 99px;
+    font-size: 20px;
+}
+
+
+/* The container */
+
+.container {
+    display: inline;
+    padding-left: 2px;
+    cursor: pointer;
+    margin: 10px 0 0 10px;
+    font-size: 15px;
+}
+
+/*right side buttons*/
+
+.right_btn {
+    height: 40px;
+    width: 220px;
+    font-size: 20px;
+    cursor: pointer;
+    background: white;
+    font-weight: 500;
+    background: #5433FF;
+    border: 2px solid #5433ff;
+    box-shadow: 0 16px 22px -17px #03153B;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+.right_btn:hover {
+    background-color: #ffffff;
+    color: #5433FF;
+}
+
+
+/*truth table styling*/
+
+.truth_table {
+    margin: 10px 45px 0 45px;
+    padding: 10px 10px 10px 10px;
+    height: 300px;
+    width: 300px;
+    background: white;
+    box-shadow: 3px 4px 6px #888888;
+    border-radius: 5px;
+}
+
+table {
+    margin: 15px 0 0 5px;
+    width: 290px;
+    height: 200px;
+    box-shadow: 3px 4px 6px #888888;
+    border-radius: 5px;
+}
+
+th {
+    height: 30px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tbody input {
+    width: 45px;
+    border: none;
+    height: 35px;
+    text-align: center;
+}
+
+.table_btn {
+    margin-top: 15px;
+}
+
+.table_btn button {
+    height: 30px;
+    width: 90px;
+    border-radius: 20px;
+}
+
+.tab_check {
+    border: 2px rgb(0, 168, 8) solid;
+    background: rgb(0, 168, 8);
+    color: #ffffff;
+}
+
+.tab_check:hover {
+    color: rgb(31, 143, 36);
+    background: white;
+    font-weight: bold;
+}
+
+.tab_result {
+    border: 2px #5433FF solid;
+    background: #5433FF;
+    color: #ffffff;
+}
+
+.tab_result:hover {
+    color: rgb(31, 143, 36);
+    background: white;
+    font-weight: bold;
+}
+
+#tab_reset {
+    border: 2px rgb(255, 54, 54) solid;
+    background: rgb(255, 54, 54);
+    color: #ffffff;
+}
+
+#tab_reset:hover {
+    color: rgb(255, 54, 54);
+    background: white;
+    font-weight: bold;
+}
+
+
+/*Truth styling end*/
+
+
+/*floating panel styling*/
+
+.Button-data {
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.Button-data.visible {
+    transform: translateX(-10px);
+}
+
+.Components {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6);
+    border: 1px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Muli';
+    position: relative;
+    height: 120px;
+    width: 430px;
+    max-width: calc(100% - 10px);
+}
+
+.Components div button {
+    position: relative;
+    background-color: #2237f8;
+    border: none;
+    font-size: 15px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 12px;
+    border: 1px rgb(46, 9, 255) solid;
+    width: 120px;
+    color: #FFFFFF;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Components div button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.Components div {
+    display: flex;
+    margin-top: 15px;
+}
+
+.panel {
+    margin-top: 200px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6);
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 650px;
+    width: 415px;
+    padding: 10px;
+    color: black;
+    max-width: calc(100% - 10px);
+}
+.img {
+    display: flex;
+}
+
+.panel img {
+    height: 100px;
+    width: 180px;
+}
+
+.close-btn {
+    border: 0;
+    color: rgb(255, 5, 5);
+    background-color: #fff;
+    font-weight: 1200;
+    cursor: pointer;
+    font-size: 15px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border-radius: 15px;
+}
+
+.panel button.close-btn:focus {
+    outline: none;
+}
+
+.floating-btn {
+    border-radius: 26.5px;
+    background-color: #001F61;
+    border: 1px solid #001F61;
+    box-shadow: 0 16px 22px -17px #03153B;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.floating-btn:hover {
+    background-color: #ffffff;
+    color: #001F61;
+}
+
+.floating-btn:focus {
+    outline: none;
+}
+
+
+/*floating panel styling end*/
+
+
+/*footer styling*/
+
+#copyright {
+    width: 1518px;
+    height: 30px;
+    font-size: 15px;
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*
+@media screen and (max-width: 1440px) {
+
+    #simulation{
+        height: 1200px;
+    }
+
+    .left{
+        display: block;
+       margin: auto;
+        float: none;
+        margin-bottom: 50px;
+    }
+
+    .right{
+        display: block;
+        width: 1000px;
+        margin: auto;
+        float: none;
+
+    }
+
+    .right_btn{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+
+    .truth_table{
+        margin: 2% 30% 0 30%;
+        width: 40%;
+    }
+    
+    table{
+        margin: auto;
+    }
+  }
+
+
+  @media screen and (max-width: 720px) {
+      #header{
+          height: 200px;
+      }
+  }
+  */
+
+#ic32 {
+    display: block;
+}
+
+#ic08 {
+    display: none;
+}
+
+#a {
+    display: block;
+}
+
+#b {
+    display: none;
+}
+
+#a1 {
+    display: none;
+}
+
+#a2 {
+    display: none;
+}
+
+#a3 {
+    display: none;
+}
+
+#a4 {
+    display: none;
+}
+
+#b1 {
+    display: none;
+}
+
+#b2 {
+    display: none;
+}
+
+#b3 {
+    display: none;
+}
+
+#b4 {
+    display: none;
+}
+
+#l1{
+    font-size: 15px;
+    color: BLACK;
+    z-index:2;
+    position: absolute;
+    top:-338px;
+    left: -565px;
+    visibility: hidden;
+    
+}
+
+#l2 
+{
+    font-size: 15px;
+    color: BLACK;
+    z-index:2;
+    position: absolute;
+    top: -338px;
+    left: -552px;
+    visibility: hidden;
+}
+
+/* The Modal (background) */
+#myModal > div > table > tbody > tr, td {
+    padding: 0 30px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 100px auto; /* 15% from the top and centered */
+    padding: 50px;
+    border: 1px solid #888;
+    width: 500px; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

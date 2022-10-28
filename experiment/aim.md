@@ -1,1 +1,1 @@
-### Aim of the experiment
+#### To verify De-Morgan's theorems.
