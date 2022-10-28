@@ -1,39 +1,10 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+[{"question":"In Boolean algebra, which properties are applicable on OR operation?","answers":{"a":"Associative properties","b":"Commutative properties","c":"Distributive properties","d":"All of the Mentioned"},"correctAnswer":"d"},
+{"question":"Identify the type of gate represented by phrase “Any high input guarantees high output”.","answers":{"a":"OR gate","b":"AND gate","c":"XOR gate","d":"NAND gate"},"correctAnswer":"a"},
+{"question":"(A + B)(A'.B') = ?","answers":{"a":"1","b":"0","c":"AB","d":"AB'"},"correctAnswer":"b"},
+{"question":"Which gate is simplest, most natural mode of operation for TTL logic?","answers":{"a":"AND gate","b":"Inverted AND gate","c":"Inhibit gate","d":"NAND gate"},"correctAnswer":"d"},
+{"question":"Complement of the expression (A'B + CD') is","answers":{"a":"(A' + B)(C' + D)","b":"(A + B')(C' + D)","c":"(A' + B)(C + D')","d":"(A + B')(C + D')"},"correctAnswer":"b"},
+{"question":"The logic gate equivalent to negative AND gate is","answers":{"a":"OR gate","b":"NOR gate","c":"AND gate","d":"NAND gate"},"correctAnswer":"d"},
+{"question":"Simplify Y = AB' + (A' + B)C .","answers":{"a":"(AB' + C)","b":"(AB + AC)","c":"(A'B + AC')","d":"(AB + A)"},"correctAnswer":"a"},
+{"question":"Identify the type of gate represented by phrase “Any low input guarantees low output”.","answers":{"a":"OR gate","b":"AND gate","c":"NOR gate","d":"NAND gate"},"correctAnswer":"b"},
+{"question":"NAND gate is equivalent to","answers":{"a":"Positive OR gate","b":"Positive AND gate","c":"Negative OR gate’","d":"Negative AND gate"},"correctAnswer":"c"},
+{"question":"The Boolean function (A + BC) is a reduced form of","answers":{"a":"(AB + BC)","b":"(A + B)(A + C)","c":"(A'B + AB'C)","d":"(A + C)B"},"correctAnswer":"b"}]
