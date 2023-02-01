@@ -1,13 +1,97 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Virtual Labs </title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/AdminLTE.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+    <!-- Simulation scripts start-->
+    <script src="../src/math.ob.js"></script>
+
+    <script src="../src/numcheck.ob.js"></script>
+    <script src="../src/canvasjschart.ob.js"></script>
+    <script src="../src/bracket.ob.js"></script>
+    <link href="../src/StyleSheet1.css" rel="stylesheet" />
+    <script>
+        window.onload = function() {
+            document.getElementById("simulation").className = "active treeview";
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Simulation scripts end-->
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+
+
+
+    <div class="wrapper">
+
+
+
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1 align="center"><B>De-Morgan's Theorems</B></h1>
+                <!-- Write your experiment name -->
+
+
+            </section>
+            <script type="text/javascript">
+                // Popup window code
+                function newPopup(url) {
+                    popupWindow = window.open(url, 'popUpWindow', 'height=500,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=yes')
+                }
+            </script>
+         
+            <!-- Main content -->
+            <section class="content">
+                <h3 style="margin-top:5%"><B>Simulation</B></h3>
+                <div class="sim-links">
+                    <div>
+                        To perform De-Morgan's theorem 1 experiment
+                        <a href="theorem1.html" target="_blank" rel="noopener noreferrer">Click Here</a>
+                    </div><br>
+                    <div>
+                        To perform De-Morgan's theorem 2 experiment
+                        <a href="theorem2.html" target="_blank" rel="noopener noreferrer">Click Here</a>
+                    </div>
+                </div>
+                <!--Simulation content goes here -->
+            </section>
+            <!-- /.content -->
+        </div>
+
+        <!-- /.content-wrapper -->
+    </div>
+
 </body>
+
 </html>
+
+<!-- ./wrapper -->
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>

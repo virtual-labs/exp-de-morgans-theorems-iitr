@@ -20,7 +20,7 @@ The complement of the product of two or more variables is equal to the sum of th
 De-Morgan’s theorems describe the equivalence between gates with inverted inputs and gates with inverted outputs. Simply a 'NAND' gate is equivalent to a 'Negative-OR gate' and a 'NOR' gate is equivalent to a 'Negative-AND gate' (shown in fig. 1).
 <center>
   
-![Fig.1](images/1.1.jpg)  
+![Fig.1](images/nand-nor.jpg)  
 
 **Fig. 1 De-Morgan's theorems implemented with basic gates** </center>
 
@@ -184,12 +184,13 @@ Let’s apply the principles of De-Morgan’s theorems to the simplification of 
 
 **Fig. 2(a) A circuit to be simplified using De-Morgan’s theorems** </center> 
 
-As always, our first step in simplifying this circuit must be to generate an equivalent Boolean expression. We can do this by placing a sub-expression label at the output of each gate (Fig. 2b), as the inputs become known. Here’s the first step in this process :-
+As always, our first step in simplifying this circuit must be to generate an equivalent Boolean expression. We can do this by placing a sub-expression label at the output of each gate (Fig. 2b), as the inputs become known. Here’s the first step in this process(Fig.2(b)-(d) Steps leading to generation of Boolean expression corresponding to circuit) :-
+
 <center>
 
 ![equation](images/4b.1.jpg)  
 
-**Fig.2(b)-(d) Steps leading to generation of Boolean expression corresponding to circuit** </center>
+**Fig.2(b)** </center>
 
 We can label the outputs of the first NOR gate and the NAND gate. When dealing with inverted-output gates,it is easier to write an expression for the gate’s output without the final inversion, with an arrow pointing to just before the inversion bubble. Then, at the wire leading out of the gate (after the bubble), the full, complemented expression is written as shown in Fig. 2(c). This helps ensure a complementing bar in the sub-expression.  
 <center> 
@@ -214,7 +215,7 @@ Now, we reduce this expression using the identities, properties, rules, and theo
 Fig. 3 shows the equivalent gate circuit for this much-simplified expression as follows :-
 <center> 
   
-![equation](images/6.jpg)  
+![equation](images/6.jpg)    
 
 **Fig. 3 Equivalent Gate circuit for the expression simplified using De Morgan’s theorems** </center> 
 
@@ -260,6 +261,7 @@ Let {A1, A2,……, An-1, An} be a set of sets. The complement of the intersecti
  <center>  
 
 ![equation](images/9.jpg)  </center> 
+
 The **∩** and **U** symbols above are used to represent an intersection or union of many sets. For example, suppose there are four sets B1, B2, B3 and B4. The union of these sets could be represented by (B1 ∪ B2 ∪ B3 ∪ B4). However, it could be represented more concisely with  
 <center> 
 
