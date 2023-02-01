@@ -1,8 +1,7 @@
 ## Procedure<br>
 <div style="text-align:justify">
 
-1.  Click on **“Click Here”** in **Simulation** tab.
-2.  Choose between **“1<sup>st</sup> theorem”** or **“2<sup>nd</sup> theorem”** from **Simulation** tab.
+1.  Choose between **“theorem 1”** or **“theorem 2”** from **Simulation**.
 
 #### **Familiarise with components**
 
@@ -44,7 +43,7 @@
 4.  Provide the input by clicking toggle switches **A** and **B**.
 5.  Fill the observed values in the **Truth Table**.
 6.  Verify **Truth Table** by clicking on **Check** button, if outputs are correct then click on **OK**.
-7.  Click on the **Reset** button provided below the table.
+7.  Click on the **Result** button provided below the table.
   
 
 **R.H.S. term for De-Morgan’s 1<sup>st</sup> theorem, i.e A'B' :–**  
@@ -74,9 +73,9 @@
   
 3.  Click on **Check Connections** button. If connections are right, click on **‘OK’**, then **Simulation** will become active.
 4.  Provide the input by clicking toggle switches **A** and **B**.
-5.  Verify **Truth Table** by clicking on **Check** button, if outputs are correct then click on **OK**.
-6.  Fill the observed values in the Truth Table.
-7.  Click on the **Reset** button provided below the table.
+5.  Fill the observed values in the **Truth Table**.
+6.  Verify **Truth Table** by clicking on **Check** button, if outputs are correct then click on **OK**.
+7.  Click on the **Result** button provided below the table.
 
 #### 2<sup>nd</sup> Theorem :-  
 
@@ -109,7 +108,7 @@
 4.  Provide the input by clicking toggle switches **A** and **B**.
 5.  Fill the observed values in the **Truth Table**.
 6.  Verify **Truth Table** by clicking on **Check** button, if outputs are correct then click on **OK**.
-7.  Click on the **Reset** button provided below the table.
+7.  Click on the **Result** button provided below the table.
   
 
 **R.H.S. term for De-Morgan’s 2<sup>nd</sup> theorem, i.e (A' + B') :–**  
@@ -139,7 +138,8 @@
   
 3.  Click on **Check Connections** button. If connections are right, click on **‘OK’**, then **Simulation** will become active.
 4.  Provide the input by clicking toggle switches **A** and **B**.
-5.  Verify **Truth Table** by clicking on **Check** button, if outputs are correct then click on **OK**.
-6.  Fill the observed values in the Truth Table.
-7.  Click on the **Reset** button provided below the table.
+5.  Fill the observed values in the **Truth Table**.
+6.  Verify **Truth Table** by clicking on **Check** button, if outputs are correct then click on **OK**.
+7.  Click on the **Result** button provided below the table.
+
 </div>
