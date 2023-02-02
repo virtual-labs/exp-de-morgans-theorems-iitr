@@ -1,7 +1,7 @@
 ## Procedure<br>
 <div style="text-align:justify">
 
-1.  Choose between **“theorem 1”** or **“theorem 2”** from **Simulation**.
+1.  Under Simulation, click **Theorem 1** or **Theorem 2**.
 
 #### **Familiarise with components**
 
