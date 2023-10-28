@@ -157,20 +157,23 @@ button:focus {
 
 /*check connection and reset button*/
 
+button:disabled{
+    cursor: not-allowed;
+    opacity: 0.6;
+}
 .bottom {
     height: 60px;
     text-align: center;
 }
 
 .bottom button {
-    margin: 10px 80px 10px 80px;
+    margin: 15px 80px 10px 80px;
     height: 40px;
     width: 210px;
     font-size: 15px;
     border: none;
     font-weight: bold;
     border-radius: 25px;
-    cursor: pointer;
     color: white;
 }
 
@@ -182,7 +185,7 @@ button:focus {
 #check:hover {
     color: rgb(0, 168, 8);
     background: white;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #reset {
@@ -193,7 +196,7 @@ button:focus {
 #reset:hover {
     color: rgb(255, 54, 54);
     background: white;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
@@ -325,18 +328,30 @@ tbody input {
 }
 
 .tab_result:hover {
-    color: rgb(31, 143, 36);
+    color: #5433FF;
     background: white;
     font-weight: bold;
 }
 
-#tab_reset{
+#tab_reset1{
     border: 2px rgb(255, 54, 54) solid;
     background: rgb(255, 54, 54);
     color: #ffffff;
 }
 
-#tab_reset:hover {
+#tab_reset1:hover {
+    color: rgb(255, 54, 54);
+    background: white;
+    font-weight: bold;
+}
+
+#tab_reset2{
+    border: 2px rgb(255, 54, 54) solid;
+    background: rgb(255, 54, 54);
+    color: #ffffff;
+}
+
+#tab_reset2:hover {
     color: rgb(255, 54, 54);
     background: white;
     font-weight: bold;
@@ -351,9 +366,10 @@ tbody input {
 .Button-data {
     position: fixed;
     right: 0;
-    bottom: 50px;
+    bottom: 10px;
     transform: translateX(100%);
     transition: transform 0.4s ease-in-out;
+    z-index:9999;
 }
 
 .Button-data.visible {

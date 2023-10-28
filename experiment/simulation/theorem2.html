@@ -20,7 +20,7 @@
 
     <!--JS files-->
     <script src="js/index2.js"></script>
-    <script src="js/graph2.js"></script>
+    <script src="js/graph.js"></script>
 
     <!--CSS files-->
     <link rel="stylesheet" href="css/style2.css">
@@ -67,8 +67,8 @@
 
             <div class="bottom">
                 <div>
-                    <button id="check" onclick="checkCircuit()">Check Connection</button>
-                    <button id="reset" onclick="reload()">Reset</button>
+                    <button id="check" onclick="checkCircuit()" disabled>Check Connection</button>
+                    <button id="reset" onclick="reload()" disabled>Reset</button>
                 </div>
             </div>
         </div>
@@ -82,21 +82,21 @@
                         <li>Make connections as per the circuit diagram and pin diagrams of ICs.</li>
                         <figure>
                             <img src="images/image006.png" style="height: 60px; margin-left: 100px;">
-                            <figcaption style="margin-left:115px;">Fig. Circuit diagram</figcaption>
+                            <figcaption style="margin-left:115px;">Fig. 1 Circuit diagram</figcaption>
                         </figure>
                         <figure>
                             <img src="images/image005.png" style="height: 150px; width:320px; margin-left: 40px;">
-                            <figcaption style="margin-left:100px;">Fig. Pin diagram of IC 7408</figcaption>
+                            <figcaption style="margin-left:100px;">Fig.2 Pin diagram of IC 7408</figcaption>
                         </figure>
                         <figure>
                             <img src="images/image003.png" style="height: 150px; width:320px; margin-left: 40px;">
-                            <figcaption style="margin-left:100px;">Fig. Pin diagram of IC 7404</figcaption>
+                            <figcaption style="margin-left:100px;">Fig. 3 Pin diagram of IC 7404</figcaption>
                         </figure>
                         <li>Click on <b>'Check Connections'</b> button. If connections are right, click on ‘OK’, then Simulation will become active.  </li>
                         <li>Provide the input by clicking toggle switches A and B..</li>
                         <li>Fill the observed values in the Truth Table.</li>
-                        <li>Verify Truth Table by clicking on Check button, if outputs are correct then click on OK.</li>
-                        <li>Click on the <b>Result</b> button provided below the table.</li>
+                        <li>Verify Truth Table by clicking on <b>'Check'</b> button, if outputs are correct then click on OK.</li>
+                        <li>Click on the <b>'Result'</b> button provided below the table.</li>
                     </ol>
                 </div>
                 
@@ -123,8 +123,8 @@
                         <li>Click on <b>'Check Connections'</b> button. If connections are right, click on ‘OK’, then Simulation will become active. </li>
                         <li>Provide the input by clicking toggle switches A and B.</li>
                         <li>Fill the observed values in the Truth Table.</li>
-                        <li>Verify Truth Table by clicking on Check button, if outputs are correct then click on OK.</li>
-                        <li>Click on the <b>Result</b> button provided below the table.</li>
+                        <li>Verify Truth Table by clicking on <b>'Check'</b> button, if outputs are correct then click on OK.</li>
+                        <li>Click on the <b>'Result'</b> button provided below the table.</li>
                     </ol>
                 </div>
             
@@ -134,15 +134,15 @@
                 <div class="Components">
                     <button class="close-btn" id="btn_close"><span>&#10005</span></button>
                     <div>
-                        <button onclick="breadboard()">Breadboard</button>
-                        <button onclick="supply()">Supply</button>
-                        <button onclick="inputs()">Inputs</button>
+                        <button class="cmpbuttons" id="breadbutton" onclick="breadboard()">Breadboard</button>
+                        <button class="cmpbuttons" id="supplybutton" onclick="supply()">Supply</button>
+                        <button class="cmpbuttons" id="inputsbutton" onclick="inputs()">Inputs</button>
                     </div>
                     <div>
-                        <button onclick="ic7432()" id="ic32">IC7432</button>
-                        <button onclick="ic7404()">IC7404</button>
-                        <button onclick="ic7408()" id="ic08">IC7408</button>
-                        <button onclick="led()">LED</button>
+                        <button class="cmpbuttons" onclick="ic7432()" id="ic32">IC7432</button>
+                        <button class="cmpbuttons" id="ic2button" onclick="ic7404()">IC7404</button>
+                        <button class="cmpbuttons"  onclick="ic7408()" id="ic08">IC7408</button>
+                        <button class="cmpbuttons" id="ledbutton" onclick="led()">LED</button>
                         
                     </div>
                 </div>
@@ -206,9 +206,9 @@
 
                     </table>
                     <div class="table_btn">
-                        <button id="tab_reset" onclick="resetTable()">Reset</button>
-                        <button class="tab_check" id="tab_check1" onclick="a()">Check</button>
-                        <button class="tab_result" onclick = "showModal();" >Result</button>
+                        <button id="tab_reset1" onclick="resetTable1()" disabled>Reset</button>
+                        <button class="tab_check" id="tab_check1" onclick="a()" disabled>Check</button>
+                        <button class="tab_result" id="tab_result1" onclick = "showModal();" disabled>Result</button>
 
                     </div>
                 </div>
@@ -246,9 +246,9 @@
 
                     </table>
                     <div class="table_btn">
-                        <button id="tab_reset" onclick="resetTable()">Reset</button>
-                        <button class="tab_check" id="tab_check2" onclick="b()">Check</button>
-                        <button class="tab_result" onclick = "showModal();" >Result</button>
+                        <button id="tab_reset2" onclick="resetTable2()" disabled>Reset</button>
+                        <button class="tab_check" id="tab_check2" onclick="b()" disabled>Check</button>
+                        <button class="tab_result" id="tab_result2" onclick = "showModal();" disabled>Result</button>
                     </div>
                 </div>
             </div>
@@ -308,7 +308,7 @@
 </div>
 
     <div id="copyright">
-        <h5>&copy; Copyright 2022 Virtual Labs, IIT Roorkee</h5>
+        <p style="font-weight:bold">&copy; Copyright 2022 Virtual Labs, IIT Roorkee</p>
     </div>
     <script src="js/right_components2.js"></script>
 </body>

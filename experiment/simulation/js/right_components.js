@@ -27,11 +27,24 @@ btn_close.addEventListener('click', () => {
     Second_Data.classList.remove('visible')
 }); 
 
+const check_button = document.getElementById('check');
+const reset_button = document.getElementById('reset');
+
+const bread_but=document.getElementById("breadbutton");
+const supply_but=document.getElementById("supplybutton");
+const led_but=document.getElementById("ledbutton");
+const ic1_but=document.getElementById("ic32");
+const ic2_but=document.getElementById("ic2button");
+const ic3_but=document.getElementById("ic08");
+const inputs_but=document.getElementById("inputsbutton");
 
 // Components hide show code here
 function breadboard() {
     var x = document.getElementById("board");
     x.style.visibility = "visible";
+
+    bread_but.disabled=true;
+   bread_but.style.cursor="not-allowed";
 
     var instance = new BoardController();
 
@@ -258,11 +271,16 @@ function breadboard() {
         instance.addEndPoint(4.5, 'board', 'row8', 'r199', [0, 0, 0, 1, 842.5, 282.5], 'blue');
         instance.addEndPoint(4.5, 'board', 'row8', 'r200', [0, 0, 0, 1, 856, 282.5], 'blue');
     }
+
+    disabledButton();
 }
 
 function inputs() {
     var x = document.getElementById("inputs");
     x.style.visibility = "visible";
+
+    inputs_but.disabled=true;
+   inputs_but.style.cursor="not-allowed";
 
     var inputs = new BoardController();
     inputs.setJsPlumbInstance(jsPlumb);
@@ -271,11 +289,16 @@ function inputs() {
     // draggable('inputs', 'mid');
     inputs.addEndPoint(4.5, 'inputs', 'input_A', 'input_A', [0, 0, 0, 0, 40, 90], 'red');
     inputs.addEndPoint(4.5, 'inputs', 'input_B', 'input_B', [0, 0, 0, 0, 108, 90], 'red');
+
+    disabledButton();
 }
 
 function ic7404() {
     var x = document.getElementById("ic7404");
     x.style.visibility = "visible";
+
+    ic2_but.disabled=true;
+   ic2_but.style.cursor="not-allowed";
 
     var ic7404 = new BoardController();
     ic7404.setJsPlumbInstance(jsPlumb);
@@ -362,11 +385,16 @@ function ic7404() {
         ic7404.addEndPoint(4.5, 'ic7404', 'ic7404_GND', 'ic7404_GND04', [0, 0, 1, -1, 90, 138.5], 'red');
         ic7404.addEndPoint(4.5, 'ic7404', 'ic7404_GND', 'ic7404_GND05', [0, 0, 1, -1, 90, 152], 'red');
     }
+
+    disabledButton();
 }
 
 function ic7408() {
     var x = document.getElementById("ic7408");
     x.style.visibility = "visible";
+
+    ic3_but.disabled=true;
+   ic3_but.style.cursor="not-allowed";
 
     var ic7408 = new BoardController();
     ic7408.setJsPlumbInstance(jsPlumb);
@@ -458,11 +486,16 @@ function ic7408() {
         ic7408.addEndPoint(4.5, 'ic7408', 'ic7408_GND', 'ic7408_GND05', [0, 0, 1, -1, 90, 152], 'red');
     }
 
+    disabledButton();
+
 }
 
 function ic7432() {
     var x = document.getElementById("ic7432");
     x.style.visibility = "visible";
+
+    ic1_but.disabled=true;
+   ic1_but.style.cursor="not-allowed";
 
     var ic7432 = new BoardController();
     ic7432.setJsPlumbInstance(jsPlumb);
@@ -553,12 +586,16 @@ function ic7432() {
         ic7432.addEndPoint(4.5, 'ic7432', 'ic7432_GND', 'ic7432_GND04', [0, 0, 1, -1, 90, 138.5], 'red');
         ic7432.addEndPoint(4.5, 'ic7432', 'ic7432_GND', 'ic7432_GND05', [0, 0, 1, -1, 90, 152], 'red');
     }
+
+    disabledButton();
 }
 
 function led() {
     var x = document.getElementById("led");
     x.style.visibility = "visible";
 
+    led_but.disabled=true;
+   led_but.style.cursor="not-allowed";
     var led = new BoardController();
     led.setJsPlumbInstance(jsPlumb);
     led.setCircuitContainer('mid');
@@ -579,11 +616,16 @@ function led() {
 
     var z = document.getElementById("l2");
     z.style.visibility = "visible";
+
+    disabledButton();
 }
 
 function supply() {
     var x = document.getElementById("supply");
     x.style.visibility = "visible";
+
+    supply_but.disabled=true;
+   supply_but.style.cursor="not-allowed";
 
     var supply = new BoardController();
     supply.setJsPlumbInstance(jsPlumb);
@@ -591,4 +633,27 @@ function supply() {
 
     supply.addEndPoint(8, 'supply', 'VCC', 'VCC', [0, 0, -1, 0, 40, 45], 'blue','red');
     supply.addEndPoint(8, 'supply', 'GND', 'GND', [0, 0, 1, 0, 80, 45], 'red','black');
+
+    disabledButton();
+}
+
+function disabledButton()
+{
+
+   if(reset_button.disabled)
+   {
+    reset_button.disabled=false;
+   }
+        
+    
+  if(window.getComputedStyle(document.getElementById('board')).visibility === "visible" && window.getComputedStyle(document.getElementById('led')).visibility === "visible" && 
+  window.getComputedStyle(document.getElementById('ic7404')).visibility === "visible" &&
+   (window.getComputedStyle(document.getElementById('ic7432')).visibility === "visible" || window.getComputedStyle(document.getElementById('ic7408')).visibility === "visible") && 
+   window.getComputedStyle(document.getElementById('supply')).visibility === "visible" && 
+  window.getComputedStyle(document.getElementById('inputs')).visibility === "visible")
+  {
+  check_button.disabled=false;
+  Second.disabled=true;
+    
+  }
 }
