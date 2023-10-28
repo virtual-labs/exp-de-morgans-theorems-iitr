@@ -1,24 +1,11 @@
-## Introduction
+### Lab Proposer/Subject Matter Experts
+| SNo. | Name | Email | Institute | Position |
+| :---: | :---: | :---: | :---: | :---: |
+| 1 | Prof. RS Anand | anandfee@gmail.com | IIT Roorkee | Professor |
 
-
-<b>Discipline | <b>Fill your discipline name here
-:--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
-
-### About the Experiment 
-
-Fill a brief description of this experiment here
-
-<b>Name of Developer | <b> Fill the name of experiment owner here 
-:--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
-
-### Contributors List
-
-SrNo | Name | Faculty or Student | Department| Institute | Email id
-:--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
-2 | . | . | . | . | .
+### Person Associated in the Lab Developement
+| SNo. | Name | Email | Institute | Position |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Rajeev Kumar | rajeevkumar.rke@gmail.com | IIT Roorkee | Senior Research Fellow |
+| 2 | Pragya Daksh | prgdaksh@gmail.com | IIT Roorkee | Project Associate |
+| 3 | Nipun Jain | nipunjain1305@gmail.com | IIT Roorkee | Project Associate |
