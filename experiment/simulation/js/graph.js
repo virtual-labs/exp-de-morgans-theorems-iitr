@@ -5,6 +5,7 @@ class Graph {
     constructor(noOfVertices) {
         this.noOfVertices = noOfVertices;
         this.AdjList = new Map();
+        this.numberofedges=0;
     }
 
 
@@ -25,6 +26,7 @@ class Graph {
         // Since graph is undirected, 
         // add an edge from w to v also 
         this.AdjList.get(w).push(v);
+        this.numberofedges++;
     }
 
     // Prints the vertex and adjacency list 
@@ -77,11 +79,11 @@ class Graph {
 
             // loop through the list and add the element to the 
             // queue if it is not processed yet 
-            for (var i in get_List) {
+            for (var j in get_List) {
 
 
 
-                var neigh = get_List[i];
+                var neigh = get_List[j];
                 if (neigh == d)
                     return true;
 
@@ -106,7 +108,8 @@ class Graph {
             visited[i] = false;
 
         // Create an object for queue 
-        var q = new d3.Queue();
+        //var q = new d3.Queue();
+        var q = new Queue();
 
         // add the starting node to the queue 
         visited[startingNode] = true;
@@ -125,8 +128,8 @@ class Graph {
 
             // loop through the list and add the element to the 
             // queue if it is not processed yet 
-            for (var i in get_List) {
-                var neigh = get_List[i];
+            for (var j in get_List) {
+                var neigh = get_List[j];
 
                 if (!visited[neigh]) {
                     visited[neigh] = true;

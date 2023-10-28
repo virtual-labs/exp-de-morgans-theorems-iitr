@@ -25,13 +25,13 @@
 
 **Fig. 2 Circuit diagram of (A + B)'**
 
-![](images/procedure2.jpg)
+![](images/procedure2.jpg)  ![](images/procedure3.jpg)
 
-**Fig. 3 Pin diagram of IC 7432**
+**Fig. 3 Pin diagram of IC 7432**  **Fig. 4 Pin diagram of IC 7404**
 
-![](images/procedure3.jpg)
 
-**Fig. 4 Pin diagram of IC 7404**
+
+
 
 **Table 1: Connection table for (A + B)'**
 

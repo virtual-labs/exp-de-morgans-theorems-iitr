@@ -128,6 +128,13 @@ function checkCircuit() {
     }
 
 
+    var edges= (g.numberofedges);
+    console.log('edges:'+edges)
+    if(edges == 0)
+    {
+        alert("No connections present.");   
+        return;
+    }
 
     var radio = document.getElementsByName('radio');
     var run;
@@ -375,6 +382,9 @@ function checkCircuit() {
             a3.style.display = "inline";
             a4.style.display = "inline";
             document.getElementById("tab_check1").disabled = false;
+            document.getElementById("tab_reset1").disabled = false;
+          
+
         }
     }
 
@@ -1450,6 +1460,8 @@ function checkCircuit() {
             b3.style.display = "inline";
             b4.style.display = "inline";
             document.getElementById("tab_check2").disabled = false;
+            document.getElementById("tab_reset2").disabled = false;
+            
         }
 
     }
@@ -1481,8 +1493,10 @@ function a() {
             if (a2 === '1') {
                 if (a3 === '1') {
                     if (a4 === '0') {
-                        alert("Correct Output");
+                        alert("Correct Output. Now click on Result button.");
                         checked_1a = true;
+                        document.getElementById("tab_check1").disabled =true;
+                        document.getElementById("tab_result1").disabled = false;
                     } else {
                         alert("Incorrect Output");
                     }
@@ -1517,8 +1531,10 @@ function b() {
             if (b2 === '1') {
                 if (b3 === '1') {
                     if (b4 === '0') {
-                        alert("Correct Output");
+                        alert("Correct Output. Now click on Result button.");
                         checked_1b=true;
+                        document.getElementById("tab_check2").disabled =true;
+                        document.getElementById("tab_result2").disabled = false;
                         //setTimeout(showModal, 2000)
                     } else {
                         alert("Incorrect Output");
@@ -1535,7 +1551,9 @@ function b() {
     }
 }
 
-function resetTable() {
+function resetTable1() {
+    document.getElementById("tab_check1").disabled =false;
+    document.getElementById("tab_result1").disabled =true;
     document.getElementById("a1").value = "";
     document.getElementById("a2").value = "";
     document.getElementById("a3").value = "";
@@ -1548,7 +1566,59 @@ function resetTable() {
     checked_1b = false;
 }
 
+function resetTable2() {
+    document.getElementById("tab_check2").disabled =false;
+    document.getElementById("tab_result2").disabled =true;
+    document.getElementById("a1").value = "";
+    document.getElementById("a2").value = "";
+    document.getElementById("a3").value = "";
+    document.getElementById("a4").value = "";
+    document.getElementById("b1").value = "";
+    document.getElementById("b2").value = "";
+    document.getElementById("b3").value = "";
+    document.getElementById("b4").value = "";
+    checked_1a = false;
+    checked_1b = false;
+}
+
+var count1=0;
+var count2=0;
+
 function plus() {
+
+    if(count2 > 0)
+{
+    jsPlumb.removeAllEndpoints("board");
+    jsPlumb.removeAllEndpoints("supply");
+    jsPlumb.removeAllEndpoints("led");
+    jsPlumb.removeAllEndpoints("inputs");
+    jsPlumb.removeAllEndpoints("ic7432");
+    jsPlumb.removeAllEndpoints("ic7404");
+
+    document.getElementById('l1').style.visibility ="hidden"; 
+    document.getElementById('l2').style.visibility ="hidden"; 
+
+    document.getElementById('board').style.visibility ="hidden"; 
+    document.getElementById('led').style.visibility = "hidden";
+    document.getElementById('ic7404').style.visibility = "hidden";
+    document.getElementById('ic7432').style.visibility = "hidden" ;
+    
+   document.getElementById('supply').style.visibility = "hidden" ; 
+   document.getElementById('inputs').style.visibility = "hidden"
+
+   document.getElementById('second').disabled=false;
+
+   check_button.disabled="true";
+
+   document.querySelectorAll('.cmpbuttons').forEach(elem => {
+    elem.disabled = false;elem.style.cursor="pointer"
+});
+resetTable1();
+document.getElementById("tab_check1").disabled =true;
+document.getElementById("tab_reset1").disabled =true;
+}
+    
+count1++;
    // alert("Reset Connections before selecting expression.");
     var x = document.getElementById("ic32");
     var y = document.getElementById("ic08");
@@ -1568,7 +1638,41 @@ function plus() {
 }
 
 function multi() {
-    alert("Reset Connections before selecting expression.");
+
+    if(count1>=0)
+{
+    jsPlumb.removeAllEndpoints("board");
+    jsPlumb.removeAllEndpoints("supply");
+    jsPlumb.removeAllEndpoints("led");
+    jsPlumb.removeAllEndpoints("inputs");
+    jsPlumb.removeAllEndpoints("ic7404");
+    jsPlumb.removeAllEndpoints("ic7408");
+
+    document.getElementById('l1').style.visibility ="hidden"; 
+    document.getElementById('l2').style.visibility ="hidden"; 
+
+    document.getElementById('board').style.visibility ="hidden"; 
+    document.getElementById('led').style.visibility = "hidden";
+    document.getElementById('ic7404').style.visibility = "hidden";
+    document.getElementById('ic7408').style.visibility = "hidden" ;
+    
+   document.getElementById('supply').style.visibility = "hidden" ; 
+   document.getElementById('inputs').style.visibility = "hidden"
+
+   document.getElementById('second').disabled=false;
+
+   check_button.disabled="true";
+   document.querySelectorAll('.cmpbuttons').forEach(elem => {
+    elem.disabled = false;
+    elem.style.cursor="pointer"
+});
+resetTable2();
+document.getElementById("tab_check2").disabled =true;
+document.getElementById("tab_reset2").disabled =true;
+}
+  
+   count2++;
+
     var x = document.getElementById("ic32");
     var y = document.getElementById("ic08");
     var a = document.getElementById("a");

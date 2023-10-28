@@ -50,7 +50,6 @@ We can show this equivalence using the following truth tables :-
 |0|1|0|1|1|0|1|
 |1|0|0|1|0|1|1|
 |1|1|1|1|0|0|0|
-  
 </center>
 
 The output values corresponding to each set of input values for both the Boolean expressions in the truth-tables are equal. Therefore, the expressions must be equal.
