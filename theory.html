@@ -1,0 +1,698 @@
+<!DOCTYPE html><html lang="en"><head>
+      <!--Google Tag Manager-->
+      <script class="gtm">
+        var dataLayer = [{
+        'labName': 'Virtual Lab',
+        'discipline': 'Test',
+        'college': 'IITR',
+        'phase': 'Testing',
+        'expName': 'TO VERIFY DE-MORGAN&#x27;S THEOREMS.',
+        'expShortName': 'de-morgans-theorems'
+        }];
+    
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5NMQ9NQ');
+      </script>
+      <!--End Google Tag Manager-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    
+    	<meta name="experiment-short-name" content="de-morgans-theorems">
+    	<meta name="developer-institute" content="IITR">
+    	<meta name="learning-unit" content="TO VERIFY DE-MORGAN'S THEOREMS.">
+    	<meta name="task-name" content="Theory">
+    
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#4076e0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4076e0">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4076e0">
+    <title>Virtual Labs</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Raleway&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/github-markdown.min.css">
+    <link rel="stylesheet" href="./assets/css/vlabs-style.css">
+    <link rel="stylesheet" href="./assets/css/toast.css">
+    <link rel="stylesheet" href="./assets/katex_assets/katex.min.css">
+    
+    <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      h1 {
+      font-size: 1.8rem;
+      }
+      h2 {
+      font-size: 1.4rem;
+      }
+      h3 {
+      font-size: 1.2rem;
+      }
+
+      h2, h3 {
+      font-weight: 800;
+      }
+    </style>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></head>
+  <body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+      <!--Google Tag Manager (noscript)-->
+      <noscript class="gtm">
+        <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5NMQ9NQ" style="display:none;visibility:hidden" width="0">
+        </iframe>
+      </noscript>
+      <!--End Google Tag Manager (noscript)-->
+  
+      <header class="vlabs-header sticky-top bg-white">
+        <nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+          
+          <button class="navbar-toggler px-4" type="button" onclick="toggle()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="d-flex justify-content-center">        
+            <a href="https://vlab.co.in" class="navbar-brand">
+              <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+            </a>
+          </div>
+          
+          <div id="headerNavbar" class="d-none border-top flex-grow-1 d-lg-flex align-items-center justify-content-end">
+            <div class="svc-rating-display">
+                <rating-display spreadsheetid="1x12nhpp0QvnsA6x-O1sV4IA9SAbfVsq_wiexWkutOmU" sheetname="Experiment-Database" columnname="Experiment Short Name" columnvalue="de-morgans-theorems" imagesdirectory="./plugins/svc-rating/images/">
+                </rating-display>
+            </div>      <div class="svc-rating-submit">
+                <rating-submit title="Rate" this="" experiment="">
+                </rating-submit>
+            </div>      <bug-report id="bug-report" title="[BUG REPORT] TO VERIFY DE-MORGAN'S THEOREMS." page-type="text" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;IITR&quot;,&quot;expname&quot;:&quot;TO VERIFY DE-MORGAN'S THEOREMS.&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;assessment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect Content&quot;]}" button_style="border: none; color: #fff; background-color: #288ec8; text-align: center; font-size: 1.05rem; border-radius: 1em;padding: 0.6em 1.2em; margin: 0 10px" position="override" custom_button_class="v-button"></bug-report>
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid flex-fill d-flex flex-column vlabs-page-main">
+        <div class="row d-flex justify-content-between">
+          <div class="flex-column">
+          <div class="row py-4 px-4 breadcrumbs">
+          	<div class="title is-4 tools">Tools</div>
+          	<span class="mx-2">
+          		<i aria-hidden="true" class="fa fa-angle-right"></i>
+          	</span>
+          	<a href="performance-report.html" class="my-2 mx-3" target="_blank">
+          		<button class="v-button">Performance Tool</button>
+          	</a>
+          	<a href="validator-report.html" class="my-2 mx-3" target="_blank">
+          		<button class="v-button">Validation Tool</button>
+          	</a>
+          </div>
+          </div>
+        </div>
+        <div class="row flex-grow-1 d-flex flex-nowrap flex-column flex-lg-row">
+          <div class="modal fade popupmenu" id="popupMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                              <a href="https://vlab.co.in" class="navbar-brand">
+                                  <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+                              </a>
+                          </h5>
+                          <button type="button" class="btn-close align-self-center" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body nav-menu">
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="index.html" class="p-2 ">
+                                      Aim
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="theory.html" class="p-2  current-item ">
+                                      Theory
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="pretest.html" class="p-2 ">
+                                      Pretest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="procedure.html" class="p-2 ">
+                                      Procedure
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="simulation.html" class="p-2 ">
+                                      Simulation
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="posttest.html" class="p-2 ">
+                                      Posttest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="references.html" class="p-2 ">
+                                      References
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="contributors.html" class="p-2 ">
+                                      Contributors
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="feedback.html" class="p-2 ">
+                                      Feedback
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="nav flex-column sidebar nav-menu flex-shrink-0 px-lg-4 align-items-center align-items-lg-start hidden d-none d-lg-flex" id="menu">
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="index.html" class="p-2 ">
+                        Aim
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="theory.html" class="p-2  current-item ">
+                        Theory
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="pretest.html" class="p-2 ">
+                        Pretest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="procedure.html" class="p-2 ">
+                        Procedure
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="simulation.html" class="p-2 ">
+                        Simulation
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="posttest.html" class="p-2 ">
+                        Posttest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="references.html" class="p-2 ">
+                        References
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="contributors.html" class="p-2 ">
+                        Contributors
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="feedback.html" class="p-2 ">
+                        Feedback
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+          </div>          <div class="vlabs-page-content px-5 pb-4 flex-grow-1 markdown-body">
+            <div class="text-center fix-spacing">
+              <h2 id="to-verify-de-morgans-theorems">To verify De-Morgan's theorems.</h2>
+          
+            </div>
+              <h3 id="introduction">Introduction</h3>
+          <div style="text-align:justify">
+          
+          <p>De-Morgan, a mathematician developed a pair of important rules regarding group complementation (complement of a group of terms) in Boolean algebra.These theorems state that “AND” and “OR” operations are interchangeable through negation.</p>
+          <h4 id="de-morgans-theorem-1"><strong>De-Morgan's Theorem 1:</strong></h4>
+          <p>The complement of the sum of two or more variables is equal to the product of the complement of the variables. For two variables A and B this theorem is written in Boolean notation as follows :-  </p>
+          <center>
+          
+          <p><strong>(A+B)' = A'.B'</strong> </p></center><p></p>
+          <h4 id="de-morgans-theorem-2"><strong>De-Morgan's Theorem 2:</strong></h4>
+          <p>The complement of the product of two or more variables is equal to the sum of the complements of the variables. For two variables A and B this theorem is written in Boolean notation as follows :-</p>
+          <center>
+          
+          <p><strong>(A.B)' = A' + B'</strong> </p></center><p></p>
+          <p>De-Morgan’s theorems describe the equivalence between gates with inverted inputs and gates with inverted outputs. Simply a 'NAND' gate is equivalent to a 'Negative-OR gate' and a 'NOR' gate is equivalent to a 'Negative-AND gate' (shown in fig. 1).</p>
+          <center>
+            
+          <p><img src="images/nand-nor.jpg" alt="Fig.1">  </p>
+          <p><strong>Fig. 1 De-Morgan's theorems implemented with basic gates</strong> </p></center><p></p>
+          <p>We can show this equivalence using the following truth tables :-</p>
+          <h4 id="de-morgans-theorem-1-1"><strong>De-Morgan's Theorem 1:</strong></h4>
+          <center>  
+          
+          <p><strong>Truth Table of De-Morgan's Theorem 1</strong></p>
+          <table>
+          <thead>
+          <tr>
+          <th align="center">A</th>
+          <th align="center">B</th>
+          <th align="center">A + B</th>
+          <th align="center">(A + B)'</th>
+          <th align="center">A'</th>
+          <th align="center">B'</th>
+          <th align="center">A'.B'</th>
+          </tr>
+          </thead>
+          <tbody><tr>
+          <td align="center">0</td>
+          <td align="center">0</td>
+          <td align="center">0</td>
+          <td align="center">1</td>
+          <td align="center">1</td>
+          <td align="center">1</td>
+          <td align="center">1</td>
+          </tr>
+          <tr>
+          <td align="center">0</td>
+          <td align="center">1</td>
+          <td align="center">1</td>
+          <td align="center">0</td>
+          <td align="center">1</td>
+          <td align="center">0</td>
+          <td align="center">0</td>
+          </tr>
+          <tr>
+          <td align="center">1</td>
+          <td align="center">0</td>
+          <td align="center">1</td>
+          <td align="center">0</td>
+          <td align="center">0</td>
+          <td align="center">1</td>
+          <td align="center">0</td>
+          </tr>
+          <tr>
+          <td align="center">1</td>
+          <td align="center">1</td>
+          <td align="center">1</td>
+          <td align="center">1</td>
+          <td align="center">0</td>
+          <td align="center">0</td>
+          <td align="center">0</td>
+          </tr>
+          </tbody></table>
+          </center> 
+          
+          <h4 id="de-morgans-theorem-2-1"><strong>De-Morgan's Theorem 2:</strong></h4>
+          <center>  
+          
+          <p><strong>Truth Table of De-Morgan's Theorem 2</strong></p>
+          <table>
+          <thead>
+          <tr>
+          <th align="center">A</th>
+          <th align="center">B</th>
+          <th align="center">A.B</th>
+          <th align="center">(A.B)'</th>
+          <th align="center">A'</th>
+          <th align="center">B'</th>
+          <th align="center">A' + B'</th>
+          </tr>
+          </thead>
+          <tbody><tr>
+          <td align="center">0</td>
+          <td align="center">0</td>
+          <td align="center">0</td>
+          <td align="center">1</td>
+          <td align="center">1</td>
+          <td align="center">1</td>
+          <td align="center">1</td>
+          </tr>
+          <tr>
+          <td align="center">0</td>
+          <td align="center">1</td>
+          <td align="center">0</td>
+          <td align="center">1</td>
+          <td align="center">1</td>
+          <td align="center">0</td>
+          <td align="center">1</td>
+          </tr>
+          <tr>
+          <td align="center">1</td>
+          <td align="center">0</td>
+          <td align="center">0</td>
+          <td align="center">1</td>
+          <td align="center">0</td>
+          <td align="center">1</td>
+          <td align="center">1</td>
+          </tr>
+          <tr>
+          <td align="center">1</td>
+          <td align="center">1</td>
+          <td align="center">1</td>
+          <td align="center">1</td>
+          <td align="center">0</td>
+          <td align="center">0</td>
+          <td align="center">0</td>
+          </tr>
+          </tbody></table>
+          </center>
+          
+          <p>The output values corresponding to each set of input values for both the Boolean expressions in the truth-tables are equal. Therefore, the expressions must be equal.</p>
+          <h4 id="mathematical-proof-of-de-morgans-theorems"><strong>Mathematical Proof of De-Morgan’s Theorems</strong></h4>
+          <h4 id="de-morgans-theorem-1-2"><strong>De-Morgan's Theorem 1:</strong></h4>
+          <p>It states that</p>
+          <center>
+          
+          <p><strong>(A + B)' = A'.B'</strong> </p></center><p></p>
+          <p><strong>Proof :-</strong> To prove this theorem, we need to recall complementarity laws, which state that</p>
+          <center> 
+          
+          <p><strong>X + X' = 1 and X.X' = 0</strong> </p></center><p></p>
+          <p>i.e. a logical variable/expression when added with its complement produces the output as 1 and when multiplied with its complement, the output as 0.<br>Let us assume that</p>
+          <center>
+          
+          <p><strong>P = (A + B)</strong> </p></center><p></p>
+          <p>where P, A, B are logical variables.<br>Then, according to complementation law</p>
+          <center>
+          
+          <p><strong>P + P' = 1 and P.P' = 0</strong> </p></center><p></p>
+          <p>If P = A + B then P' = (A + B)' and If P' i.e. (A + B)' = A'B' then</p>
+          <p>a.  (A + B) + (A'.B') must be equal to 1 {as X + X' = 1}<br>b.  (A + B).(A'.B') must be equal to 0 {as X.X = 0}</p>
+          <p>Let us first prove the first part, i.e. (A + B) + (A'.B') = 1. </p>
+          <center>
+          
+          <p><strong>(A + B) + (A'.B') = [(A + B) + A'].[(A + B) + B'] {as X + Y.Z = (X + Y)(X + Z)}<br>= (A + A' + B).(A + B + B') {as X + Y = Y + X}<br>= (1 + B).(A + 1) {as X + X' = 1}<br>= 1.1 {as 1 + X = 1}<br>= 1 {as X.1 = 1}</strong> </p></center><p></p>
+          <p>Thus first part is proved.<br>Now let us prove the second part i.e. (A + B).(A'.B') = 0  </p>
+          <center>
+          
+          <p><strong>(A + B).(A'.B') = (A'.B').(A + B) {as X.Y = Y.X}<br>= A'.B'.A + A'.B'.B {as X.(Y + Z) = X.Y + X.Z}<br>= A.A'.B' + A'.B.B'<br>= 0.B + A'.0 {as X.X' = 0}<br>= 0</strong> </p></center><p></p>
+          <p>Thus, second part is proved. Therefore, De-Morgan’s first theorem is proved.</p>
+          <h4 id="de-morgans-theorem-2-2"><strong>De-Morgan's Theorem 2:</strong></h4>
+          <p>It states that</p>
+          <center>
+          
+          <p><strong>(A.B)' = A' + B'</strong> </p></center><p></p>
+          <p><strong>Proof :-</strong> This theorem can be proved in the same way by letting P = A.B<br>Let us assume that</p>
+          <center>
+          
+          <p><strong>P = (A.B) then P' = (A.B)'</strong> </p></center><p></p>
+          <p>where P, A, B are logical variables.<br>Then, according to complementation law</p>
+          <center>
+          
+          <p><strong>P + P' = 1 and P.P' = 0</strong> </p></center><p></p>
+          <p>If P = A.B then P' = (A.B)' and If P' i.e. (A.B)' = A' + B' then</p>
+          <ol>
+          <li> (A.B) + (A' + B') must be equal to 1 {as X + X' = 1}</li>
+          <li> (A.B).(A' + B') must be equal to 0 {as X.X = 0}</li>
+          </ol>
+          <p>Let us first prove the first part, i.e. (A.B) + (A' + B') = 1. </p>
+          <center>
+          
+          <p><strong>(A.B) + (A' + B') = (A' + B') + (A.B) {as X + Y = Y + X}<br>= (A + A' + B).(A' + B + B') {as X + Y.Z = (X + Y)(X + Z)}<br>= (1 + B').(A' + 1) {as X + X' = 1}<br>= 1.1 {as 1 + X = 1}<br>= 1 {as X.1 = 1}</strong> </p></center><p></p>
+          <p>Thus first part is proved.<br>Now let us prove the second part i.e. (A.B).(A' + B') = 0  </p>
+          <center>
+          
+          <p><strong>(A.B).(A' + B') = (A.A'.B').(A.B.B') {as X.(Y + Z) = X.Y + X.Z}<br>= A.A'.B' + A'.B.B'<br>= 0.B + A.0 {as X.X' = 0}<br>= 0</strong> </p></center><p></p>
+          <p>Thus, second part is proved. Therefore, De-Morgan’s second theorem is proved.<br>Although we have used De-Morgan’s theorems with only two input variables A and B, they are equally valid for use with three, four or more input variable expressions.<br>For example, For a 3-variable input <strong>(A + B + C)' = A'.B'.C'</strong><br>and also <strong>(A.B.C)' = A' + B'+ C'</strong></p>
+          <h4 id="applications-of-de-morgans-theorems"><strong>Applications of De-Morgan’s Theorems</strong></h4>
+          <p>Applications of De Morgan’s theorems are in the fields of</p>
+          <ol>
+          <li> Engineering – Building circuits</li>
+          <li> Set Theory – Venn diagrams</li>
+          <li> Computer Programming</li>
+          </ol>
+          <h4 id="engineering"><strong>Engineering</strong></h4>
+          <p>De Morgan’s theorems are used to simplify Boolean expressions to build equations using only one sort of gate, generally NAND or NOR gates. This can lead to cheaper hardware. For practical implementations NOR, NAND and NOT gates work best.<br>For example, using De Morgan’s law </p>
+          <center>
+          
+          <p><img src="images/2.png" alt="equation"> </p></center><p></p>
+          <p>A long bar extending over the term AB acts as a grouping symbol when stretched over more than one variable. De-Morgan’s theorem may be thought of in terms of breaking a long bar symbol. When a long bar is broken, the operation directly underneath the break changes from addition to multiplication or vice versa and the broken bar pieces remain over the individual variables.  </p>
+          <center>
+          
+          <p><img src="images/3.png" alt="equation">   </p></center>
+          When multiple “layers” of bars exist in an expression, one may only break one bar at a time, and it is generally easier to begin simplification by breaking the longest (uppermost) bar first.<br>Let’s apply the principles of De-Morgan’s theorems to the simplification of a gate circuit shown in Fig. 2(a).  <p></p>
+          <center>
+          
+          <p><img src="images/4a.1.jpg" alt="equation"> </p>
+          <p><strong>Fig. 2(a) A circuit to be simplified using De-Morgan’s theorems</strong> </p></center> <p></p>
+          <p>As always, our first step in simplifying this circuit must be to generate an equivalent Boolean expression. We can do this by placing a sub-expression label at the output of each gate (Fig. 2b), as the inputs become known. Here’s the first step in this process(Fig.2(b)-(d) Steps leading to generation of Boolean expression corresponding to circuit) :-</p>
+          <center>
+          
+          <p><img src="images/4b.1.jpg" alt="equation">  </p>
+          <p><strong>Fig.2(b)</strong> </p></center><p></p>
+          <p>We can label the outputs of the first NOR gate and the NAND gate. When dealing with inverted-output gates,it is easier to write an expression for the gate’s output without the final inversion, with an arrow pointing to just before the inversion bubble. Then, at the wire leading out of the gate (after the bubble), the full, complemented expression is written as shown in Fig. 2(c). This helps ensure a complementing bar in the sub-expression.  </p>
+          <center> 
+          
+          <p><img src="images/4c.1.jpg" alt="equation">  </p>
+          <p><strong>Fig.2(c)</strong>  </p></center><p></p>
+          <p>Finally, we write an expression (or pair of expressions) for the last NOR gateas shown in Fig. 2(d).  </p>
+          <center> 
+          
+          <p><img src="images/4d.1.jpg" alt="equation"></p>
+          <p><strong>Fig.2(d)</strong> </p></center> <p></p>
+          <p>Now, we reduce this expression using the identities, properties, rules, and theorems (De-Morgan’s) of Boolean algebra.  </p>
+          <center> 
+          
+          <p><img src="images/5.png" alt="equation">  </p></center> <p></p>
+          <p>Fig. 3 shows the equivalent gate circuit for this much-simplified expression as follows :-</p>
+          <center> 
+            
+          <p><img src="images/6.jpg" alt="equation">    </p>
+          <p><strong>Fig. 3 Equivalent Gate circuit for the expression simplified using De Morgan’s theorems</strong> </p></center> <p></p>
+          <h4 id="set-theory"><strong>Set Theory</strong></h4>
+          <p>De-Morgan's Laws describe how mathematical statements and concepts are related through their opposites. In set theory, De-Morgan's Laws relate the intersection and union of sets through complements. In propositional logic, De-Morgan's Laws relate conjunctions and disjunctions of propositions through negation. De-Morgan's Laws are also applicable in computer engineering for developing logic gates.<br>Interestingly, regardless of whether De-Morgan's Laws apply to sets, propositions, or logic gates, the structure is always the same.</p>
+          <h4 id="de-morgans-laws"><strong>De-Morgan's Laws</strong></h4>
+          <p><em>Not</em> (<strong>A</strong> <em>and</em> <strong>B</strong>) is the same as <em>Not</em> <strong>A</strong> <em>or Not</em> <strong>B</strong>.<br><em>Not</em> (<strong>A</strong> <em>or</em> <strong>B</strong>) is the same as <em>NOT</em> <strong>A</strong> <em>and Not</em> <strong>B</strong>.<br>This same structure can be used to make observations in cardinality of sets, to calculate certain probabilities and to write equivalent propositions.</p>
+          <h4 id="de-morgans-laws-for-sets"><strong>De-Morgan's Laws for Sets</strong></h4>
+          <p>For sets, De-Morgan's Laws are simply observations about the relation between sets and their complements. An easy way to visualize these rules is through Venn Diagrams.<br>Let us observe the union of the complements of two sets. On a Venn diagram, this union covers all space in the Venn diagram except for the intersection of the two sets. Hence, De-Morgan's Law for the complement of an intersection of two sets.</p>
+          <h4 id="complement-of-an-intersection-of-two-sets"><strong>Complement of an Intersection of Two Sets</strong></h4>
+          <p>The complement of the intersection of sets A and B is equal to the union of Ac and Bc as shown in Fig. 4.  </p>
+          <center> 
+          
+          <p><img src="images/7.jpg" alt="equation">  </p>
+          <p><strong>Fig. 4 Complement of an intersection of sets A and B</strong> </p></center> <p></p>
+          <p>Let us observe the intersection of the complements of two sets. On a Venn Diagram, this intersection covers all space in the Venn Diagram except for the union of the two sets. Hence, De-Morgan's Law for the complement of a union of two sets.  </p>
+          <h4 id="complement-of-a-union-of-two-sets"><strong>Complement of a Union of Two Sets</strong></h4>
+          <p>The complement of the union of sets and is equal to the intersection of Ac and Bc as shown in Fig. 5.  </p>
+          <center>    
+          
+          <p><img src="images/8.jpg" alt="equation">  </p>
+          <p><strong>Fig. 5 Complement of a union of sets A and B</strong> </p></center> <p></p>
+          <p>De-Morgan's Laws can be generalized to any number of sets.<br><strong>Generalization of the Complement of Intersection of Sets :-</strong><br>Let {A1, A2,……, An-1, An} be a set of sets. The complement of the intersection of these sets is<br> </p><center>  <p></p>
+          <p><img src="images/9.jpg" alt="equation">  </p></center> <p></p>
+          <p>The <strong>∩</strong> and <strong>U</strong> symbols above are used to represent an intersection or union of many sets. For example, suppose there are four sets B1, B2, B3 and B4. The union of these sets could be represented by (B1 ∪ B2 ∪ B3 ∪ B4). However, it could be represented more concisely with  </p>
+          <center> 
+          
+          <p><img src="images/10.jpg" alt="equation">  </p></center> 
+          <strong>Generalization of the Complement of a Union of Sets</strong><br>Let {A1, A2,.…., An-1, An} be a set of sets. The complement of the union of these sets is  <p></p>
+          <center>   
+          
+          <p><img src="images/11.png" alt="equation"> </p></center> <p></p>
+          <p>Because these generalizations require finding the unions and intersections of many sets, it is important to consider the principle of inclusion and exclusion when calculating the cardinality of sets with De-Morgan's Laws.</p>
+          <h4 id="computer-programming"><strong>Computer Programming</strong></h4>
+          <p>De-Morgan’s law is something that any student of programming eventually needs to deal with. Understanding De-Morgan’s law in programming, is critical if we want to know how to write code that negates two Boolean conditions.<br>De-Morgan’s laws state that specific Boolean statements can be written in different ways to the same effect. The precise definition can be seen here.  </p>
+          <ol>
+          <li> A group of negated <em>And's</em> is the same as negated group of <em>Or's</em> i.e <strong>(!a&amp;&amp; !b &amp;&amp; !c) === !(a || b || c)</strong></li>
+          <li> A group of negated <em>Or's</em> is the same as a negated group of <em>And's</em> i.e <strong>(!a || !b || !c) === !(a &amp;&amp; b &amp;&amp; c)</strong></li>
+          </ol>
+          <p>This is cool, but how can this be used in software?<br><strong>Checking for Missing a Minimum Requirement</strong><br>The first rule expresses that a group of negated <em>And's</em> is the same as a group of negated <em>Or's</em>. This can be used any time we want to take action when at least one condition must be met. In the below example, we will check that at least a user name, user id or user e-mail is provided. If not, we will throw an error.<br>Here we express it as <strong>(!a&amp;&amp; !b &amp;&amp; !c)</strong> :-<br>constuserName = null;<br>constuserId = null;<br>constuserEmail = null;<br>if(!userName&amp;&amp; !userId&amp;&amp; !userEmail)) {<br>throw new Error('At least one user identifier must be passed');<br>}<br>Here we express it as <strong>!(a || b || c)</strong> :- constuserName = null;<br>constuserId = null;<br>constuserAlias = null;<br>if(!(userName || userId || userAlias)) {<br>throw new Error('At least one user identifier must be passed');<br>}<br>By using the first method, we can simply read this as 'At least one of these is required'.<br><strong>Checking for Requirements</strong><br>The second rule expresses that a group of negated <em>Or's</em> is the same as a negated group of <em>And's</em>. This can be used any time you want to take action when there are a series of conditions that must be met. In the example below, we will check that a sequence of requirements is provided. If not, we will throw an error.<br>Here we express it as <strong>(!a || !b || !c)</strong> :- constrequirementA = true;<br>constrequirementB = false;<br>constrequirementC = true;<br>if(!requirementA || !requirementB || !requirementC) {<br>throw new Error('All of the requirements must be met');<br>}<br>Here we express it as <strong>!(a &amp;&amp; b &amp;&amp; c)</strong> :- constrequirementA = true;<br>constrequirementB = false;<br>constrequirementC = true;<br>if(!(requirementA&amp;&amp;requirementB&amp;&amp;requirementC)) {<br>throw new Error('All of the requirements must be met');<br>}<br>By using the second method, we can simply read this as 'All these are required'.  </p>
+          <p>Thus, De-Morgan’s laws can help simplify the code to make it more readable. We can change a sequence of negated <em>And's</em> to something that reads as 'At least one of these is required' and a sequence of negated <em>Or's</em> to something that reads as 'All of these are required'.</p>
+          </div>
+          </div>
+          <div class="bug-report-mobile">
+              <bug-report id="bug-report" title="[BUG REPORT] TO VERIFY DE-MORGAN'S THEOREMS." page-type="text" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;IITR&quot;,&quot;expname&quot;:&quot;TO VERIFY DE-MORGAN'S THEOREMS.&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;assessment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect Content&quot;]}" position="override" button_style="
+                          position: fixed; 
+                          bottom: 20px;
+                          right: 20px;
+                          z-index: 1;
+                          font-size: 0;
+                          padding: 25px;
+                          border-radius: 50%;
+                          border: none;
+                          background-color: #0fc0ff;
+                          background-image: url(data:image/png;base64,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);
+                          background-repeat: no-repeat;
+                          background-position: center;
+                          background-size: 30px;
+                          filter: invert(1);">
+              </bug-report>
+          </div>        </div>
+      </div>
+      <footer class="text-light pt-2 vlabs-footer d-flex flex-column">
+        <div class="row px-5 mx-0">
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Community Links</span>
+            <a href="https://www.sakshat.ac.in/" class="text-light">Sakshat Portal</a>
+            <a href="http://outreach.vlabs.ac.in/" class="text-light">Outreach Portal</a>
+            <a href="https://vlab.co.in/faq" class="text-light">FAQ: Virtual Labs</a>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Contact Us</span>
+            <span> Phone: General Information: 011-26582050 </span>
+            <span> Email: support@vlabs.ac.in </span>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Follow Us</span>
+            <div class="social-links">
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #55acee;" href="https://twitter.com/TheVirtualLabs">
+      	  <i class="fab fa-twitter"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #3b5998;" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+      	  <i class="fab fa-facebook"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #e52d27;" href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+      	  <i class="fab fa-youtube"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #2867B2;" href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+      	  <i class="fab fa-linkedin"></i>
+      	</a>
+            </div>
+          </div>
+        </div>
+        <div class="m-0 py-2 text-center" style="font-family: &quot;Open Sans&quot;, sans-serif; background: #212121;">
+          <a class="text-primary font-weight-bold" href="https://www.gnu.org/licenses/agpl-3.0.en.html"> AGPL 3.0 </a>
+          &nbsp;&amp;&nbsp;
+          <a class="text-primary font-weight-bold" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons (CC BY-NC-SA 4.0) </a>
+        </div>
+      </footer>
+    <script src="./assets/js/toggleSidebar.js"></script>
+    <script src="./assets/js/event-handler.js"></script>
+
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
+  
+
+<script type="module" src="https://virtual-labs.github.io/svc-bug-report/client/src/bug-report.js"></script><script type="module" src="plugins/svc-rating/index.js"></script><script type="module" src="plugins/svc-rating/config.js"></script><script type="module" src="https://apis.google.com/js/api.js"></script></body></html>
