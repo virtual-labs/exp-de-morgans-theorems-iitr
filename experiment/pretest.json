@@ -1,10 +1,10 @@
 [{"question":"One of the statements of De-Morgan’s theorem states that","answers":{"a":"(AB)' = A' + B'","b":"(A + B) = A'.B'","c":"(A' + B') = A'B'","d":"(AB)' = A' + B"},"correctAnswer":"a"},
 {"question":"'AND' and 'OR' operations are interchangeable through negations","answers":{"a":"Sometimes","b":"Always","c":"Never","d":"Not Sure"},"correctAnswer":"b"},
-{"question":"The circuit diagram shown below represents","image":"<img src='images/pretestques3.png'/>","answers":{"a":"Negative AND logic","b":"Positive AND logic","c":"Negative NAND logic","d":"Positive NAND logic"},"correctAnswer":"a"},
+{"question":"The circuit diagram shown below represents <br> <img src='images/pretestques3.png'/>","answers":{"a":"Negative AND logic","b":"Positive AND logic","c":"Negative NAND logic","d":"Positive NAND logic"},"correctAnswer":"a"},
 {"question":"If individual negations are applied on two AND statements then its same statement is","answers":{"a":"NOR-OR statement","b":"NOT-OR statement","c":"NAND-AND statement","d":"NOT-AND statement"},"correctAnswer":"b"},
-{"question":"Identify the logic gate that can be drawn from below diagram","image":"<img src='images/pretestques5.png'/>","answers":{"a":"AND gate","b":"NAND gate","c":"NOT gate","d":"NOR gate"},"correctAnswer":"c"},
+{"question":"Identify the logic gate that can be drawn from below diagram <br> <img src='images/pretestques5.png'/>","answers":{"a":"AND gate","b":"NAND gate","c":"NOT gate","d":"NOR gate"},"correctAnswer":"c"},
 {"question":"If individual negations are applied on two OR statements then its same statement is","answers":{"a":"NOR-OR statement","b":"NOT-OR statement","c":"NAND-AND statement","d":"NOT-AND statement"},"correctAnswer":"d"},
-{"question":"Identify the logic function described by given diagram","image":"<img src='images/pretestques7.png'/>","answers":{"a":"OR gate","b":"AND gate","c":"XOR gate","d":"NAND gate"},"correctAnswer":"a"},
+{"question":"Identify the logic function described by given diagram <br> <img src='images/pretestques7.png'/>","answers":{"a":"OR gate","b":"AND gate","c":"XOR gate","d":"NAND gate"},"correctAnswer":"a"},
 {"question":"As per De-Morgan’s Law, (A U B)' is equal to","answers":{"a":"(A' ∩ B')","b":"(A' U B')","c":"(A ∩ B)'","d":"(A' + B')"},"correctAnswer":"a"},
 {"question":"Identify the type of gate represented by phrase 'Any low input guarantees high output'.","answers":{"a":"OR gate","b":"AND gate","c":"NOR gate","d":"NAND gate"},"correctAnswer":"d"},
 {"question":"As per De-Morgan’s Law, (A ∩ B)' is equal to","answers":{"a":"(A' ∩ B')","b":"(A' U B')","c":"(A ∩ B)'","d":"(A' + B')"},"correctAnswer":"b"}]
