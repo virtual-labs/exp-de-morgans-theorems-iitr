@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To verify De-Morgan's theorem (T-1)</title>
+
+    <!--JSplumb-->
+    <link rel="stylesheet" href="css\jsplumbtoolkit-defaults.css">
+    <script src="js\jsplumb.min.js"></script>
+
+    <script src="js\jquery-latest.js"></script>
+    <script src="js\jquery-ui-latest.js"></script>
+    <script src="js\jquery.jsPlumb-1.3.9-all-min.js"></script>
+
+
+    <!--jQuery-->
+    <script src="js\jquery.min.js"></script>
+
+    <!--JS files-->
+    <script src="js/index.js"></script>
+    <script src="js/graph.js"></script>
+
+    <!--CSS files-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="plus();">
+
+    
+    <div id="exp-name">
+        <h3>To verify De-Morgan's theorem</h3>
+    </div>
+    <div id="simulation">
+        <div class="left">
+
+            <div id="mid">
+
+                <div id="BodyContainer">
+                    <br/>
+
+                    <div id="supply"></div>
+                    <div id="inputs">
+                        <label>A</label>
+                        <div id="input_A"><img src="images/switch_0.png" id="input_a" width="50" height="75" onclick="changeA()"></div>
+                        <label>B</label>
+                        <div id="input_B"><img src="images/switch_0.png" id="input_b" width="50" height="75" onclick="changeB()"></div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+
+                    <div id="board">
+                        <div class="ic" id="ic7408"></div>
+                        <div class="ic" id="ic7404"></div>
+                        <div class="ic" id="ic7432"></div>
+                        <div id="led">
+                            <label id="l1" style="font-size: 13px;color: BLACK;position: absolute;top:480px;left: 915px;visibility: hidden;"><B>C</B></label>
+                                <label id="l2" style="font-size: 13px;color: BLACK;position: absolute;top:480px;left: 930px;visibility: hidden;"><B>A</B></label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div>
+                    <button id="check" onclick="checkCircuit()">Check Connection</button>
+                    <button id="reset" onclick="reload()">Reset</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="Button-data" id="First_Data">
+                <div class="panel">
+                    <button class="close-btn" id="close-btn"><span>&#10005</span></button>
+                    <div id="left_instruct" >
+                    <ol type="1" style="padding-left: 20px;">
+                        <li>Click on the Component button to place components on the table.</li>
+                        <li>Make connections as per the circuit diagram and pin diagrams of ICs.</li>
+                        <figure>
+                            <img src="./images/image006.png" style="height: 60px; margin-left: 100px;">
+                            <figcaption style="margin-left:115px;">Fig. Circuit diagram</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./images/image005.png" style="height: 150px; width:320px; margin-left: 40px;">
+                            <figcaption style="margin-left:100px;">Fig. Pin diagram of IC 7408</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./images/image003.png" style="height: 150px; width:320px; margin-left: 40px;">
+                            <figcaption style="margin-left:100px;">Fig. Pin diagram of IC 7404</figcaption>
+                        </figure>
+                        <li>Click on <b>'Check Connections'</b> button. If connections are right, click on ‘OK’, then Simulation will become active.  </li>
+                        <li>Provide the input by clicking toggle switches A and B..</li>
+                        <li>Fill the observed values in the Truth Table.</li>
+                        <li>Verify Truth Table by clicking on Check button, if outputs are correct then click on OK.</li>
+                        <li>Click on the <b>Result</b> button provided below the table.</li>
+                    </ol>
+                </div>
+                
+
+                <div id="right_instruct" style="display: none;">
+
+                    <ol type="1" style="padding-left: 20px;">
+                        <li>Click on the Component button to place components on the table.</li>
+                        <li>Make connections as per the circuit diagram and pin diagrams of ICs.</li>
+                        <figure>
+                            <img src="./images/image007.png" style="height: 60px; margin-left: 100px;">
+                            <figcaption style="margin-left:115px;">Fig. Circuit diagram</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./images/image002.png" style="height: 150px; width:320px; margin-left: 40px;">
+                            <figcaption style="margin-left:100px;">Fig. Pin diagram of IC 7432</figcaption>
+                            
+                        </figure>
+                        <figure>
+                            <img src="./images/image003.png" style="height: 150px; width:320px; margin-left: 40px;">
+                            <figcaption style="margin-left:100px;">Fig. Pin diagram of IC 7404</figcaption>
+                            
+                        </figure>
+                        <li>Click on <b>'Check Connections'</b> button. If connections are right, click on ‘OK’, then Simulation will become active. </li>
+                        <li>Provide the input by clicking toggle switches A and B.</li>
+                        <li>Fill the observed values in the Truth Table.</li>
+                        <li>Verify Truth Table by clicking on Check button, if outputs are correct then click on OK.</li>
+                        <li>Click on the <b>Result</b> button provided below the table.</li>
+                    </ol>
+                </div>
+            
+                </div>
+            </div>
+            <div class="Button-data" id="Second_Data">
+                <div class="Components">
+                    <button class="close-btn" id="btn_close"><span>&#10005</span></button>
+                    <div>
+                        <button onclick="breadboard()">Breadboard</button>
+                        <button onclick="supply()">Supply</button>
+                        <button onclick="inputs()">Inputs</button>
+                    </div>
+                    <div>
+                        <button onclick="ic7432()" id="ic32">IC7432</button>
+                        <button onclick="ic7404()">IC7404</button>
+                        <button onclick="ic7408()" id="ic08">IC7408</button>
+                        <button onclick="led()">LED</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="theorem">
+                <div>
+                    <h4>Theorem 2</h4>
+                    <div style="padding-top: 5px;">
+                        <input type="radio" checked="checked" name="radio" value="2a" onchange="plus()" >
+                        <label class="container" style="margin-right: 30px;">(AB)’
+                            
+                            <span class="checkmark"></span>
+                        </label>
+                        <input type="radio" name="radio" value="2b" onchange="multi()">
+                        <label class="container" style="margin-left: 30px;">A’+B’
+                           
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                </div>
+
+            </div>
+            <div style="margin-top: 15px;">
+                <button class="right_btn" id="First">Instructions</button>
+                <button class="right_btn" id="second">Components</button>
+            </div>
+            <div class="truth_table" id="table">
+                <h2>Truth table</h2>
+                <div id="a">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>(AB)'</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td><input id="a1" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>1</td>
+                                <td><input id="a2" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0</td>
+                                <td><input id="a3" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td><input id="a4" type="text"></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                    <div class="table_btn">
+                        <button id="tab_reset" onclick="resetTable()">Reset</button>
+                        <button class="tab_check" id="tab_check1" onclick="a()">Check</button>
+                        <button class="tab_result" onclick = "showModal();" >Result</button>
+
+                    </div>
+                </div>
+                <div id="b">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>A'+B'</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td><input id="b1" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>1</td>
+                                <td><input id="b2" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0</td>
+                                <td><input id="b3" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td><input id="b4" type="text"></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                    <div class="table_btn">
+                        <button id="tab_reset" onclick="resetTable()">Reset</button>
+                        <button class="tab_check" id="tab_check2" onclick="b()">Check</button>
+                        <button class="tab_result" onclick = "showModal();" >Result</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>De-Morgan's Theorem 2 is Verified i.e. (AB)' = A'+B'</h3><br/>
+    <table class="table" style="margin:auto">
+                        <thead>
+                            <tr>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>(AB)'</th>
+                                <th>A'+B'</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                
+
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+
+                            </tr>
+                        </tbody>
+    </table>
+
+  </div>
+
+</div>
+
+    <div id="copyright">
+        <h5>&copy; Copyright 2022 Virtual Labs, IIT Roorkee</h5>
+    </div>
+    <script src="js/right_components.js"></script>
+</body>
+
+</html>
